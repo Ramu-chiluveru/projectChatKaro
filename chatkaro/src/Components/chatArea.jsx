@@ -11,7 +11,7 @@ import axios from "axios";
 import { myContext } from "./mainContainer";
 import io from "socket.io-client";
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app";
 
 
 
@@ -41,7 +41,7 @@ function ChatArea() {
     };
     axios
       .post(
-        "http://localhost:5000/message/",
+        "https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app/message/",
         {
           content: messageContent,
           chatId: chat_id,
@@ -93,7 +93,7 @@ function ChatArea() {
       },
     };
     axios
-      .get("http://localhost:5000/message/" + chat_id, config)
+      .get("https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app/message/" + chat_id, config)
       .then(({ data }) => {
         setAllMessages(data);
         console.log("messages",allMessages);
