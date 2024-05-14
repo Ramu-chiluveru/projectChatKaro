@@ -40,7 +40,7 @@ function Sidebar() {
         Authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("http://localhost:5000/user/fetchUsers", config).then((res) => {
+    axios.get("https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app/user/fetchUsers", config).then((res) => {
       console.log("UData refreshed in Users panel ");
       setConversations(res.data);
       // setRefresh(!refresh);
