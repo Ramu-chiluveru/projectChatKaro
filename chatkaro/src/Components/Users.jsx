@@ -36,7 +36,7 @@ function Users() {
         Authorization: `Bearer ${userData.data.token}`,
       },
     };
-    axios.get("http://localhost:5000/user/fetchUsers", config).then((data) => {
+    axios.get("https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app/user/fetchUsers", config).then((data) => {
       console.log("UData refreshed in Users panel ");
       setUsers(data.data);
       // setRefresh(!refresh);
@@ -95,7 +95,7 @@ function Users() {
                       Authorization: `Bearer ${userData.data.token}`,
                     },
                   };
-                  const response = axios.post("http://localhost:5000/chat/acceschat",{userId:user._id},config); 
+                  const response = axios.post("https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app/chat/acceschat",{userId:user._id},config); 
             
                   response.then((res)=>{
                     navigate("/app/chat/"+res.data._id+"&"+res.data.chatName)
