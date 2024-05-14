@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/projectChatKaro/static/css/main.bb0f54c6.css",
+    "main.js": "/projectChatKaro/static/js/main.801b894c.js",
+    "static/media/chat.png": "/projectChatKaro/static/media/chat.9535e054773793d5a3ea.png",
+    "index.html": "/projectChatKaro/index.html",
+    "main.bb0f54c6.css.map": "/projectChatKaro/static/css/main.bb0f54c6.css.map",
+    "main.801b894c.js.map": "/projectChatKaro/static/js/main.801b894c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb0f54c6.css",
+    "static/js/main.801b894c.js"
+  ]
+}
