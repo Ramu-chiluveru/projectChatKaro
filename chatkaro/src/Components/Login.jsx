@@ -30,7 +30,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/user/login/",
+        "https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app/user/login/",
         data,
         config
       );
@@ -58,7 +58,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/user/register/",
+        "https://project-chat-karo-pcl152j4y-ramu-chiluverus-projects.vercel.app/user/register/",
         data,
         config
       );
